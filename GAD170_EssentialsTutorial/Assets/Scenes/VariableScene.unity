@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 609696329}
   - component: {fileID: 609696328}
   - component: {fileID: 609696327}
-  - component: {fileID: 609696326}
   - component: {fileID: 609696325}
   m_Layer: 0
   m_Name: VariableTesting
@@ -153,21 +152,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0326f0bf0a047d647939281c90f7525d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &609696326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 609696324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bad883390df74914c9705f0dde63d288, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myFirstBool: 1
-  myFirstString: SomeString
   myFirstInt: 1
+  myFirstFloat: 3.455
+  myFirstDouble: 0.10999999940395355
+  myFirstBool: 0
+  myFirstString: Kyle is awesomer
+  myFirstChar: 75
 --- !u!65 &609696327
 BoxCollider:
   m_ObjectHideFlags: 0
