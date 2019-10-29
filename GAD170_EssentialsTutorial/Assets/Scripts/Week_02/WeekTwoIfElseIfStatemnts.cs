@@ -42,7 +42,7 @@ public class WeekTwoIfElseIfStatemnts : MonoBehaviour
         // Else if it checks to see if it is yellow then checks if user doesn't like coffee
         // otherwise checks if it's purple otherwise it's some other colour.
         if (myCarColour == "Poo Brown")
-        {
+        {   
             Debug.Log("Car is Poo Brown");
         }
         else if(myCarColour == "yellow")
