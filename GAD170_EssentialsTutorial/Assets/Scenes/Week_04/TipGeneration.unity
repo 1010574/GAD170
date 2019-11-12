@@ -323,6 +323,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe93da1f4b05dd24da3e7a2b88ba7fa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myMealCost: 56.3
+  tipPercentage: 0.15
+  calculateButton: 13
+  taxAmount: 0.1
 --- !u!4 &1961017442
 Transform:
   m_ObjectHideFlags: 0
