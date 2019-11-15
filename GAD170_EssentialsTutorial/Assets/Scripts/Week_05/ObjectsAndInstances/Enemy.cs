@@ -40,27 +40,26 @@ public class Enemy : MonoBehaviour
         }
         set
         {
-            Debug.Log(value);
             m_fullName = value;
         }
     }
 
     /// <summary>
-    /// Sets the instance enemy class with some default values.
+    /// Sets the instanced enemy class with some default values.
     /// </summary>
     public void SetUpEnemy()
     {
-        myFirstName = "Kyle";
-        myLastName = "Lyon";
+        myFirstName = "Poopy";
+        myLastName = "Butthole";
         Health = 100;
         mana = 100;
         m_fullName = myLastName + " " + myLastName;
 
         // An example of using Set
-        FullName = "Kyle";
+        FullName = "Kyle Lyon";
 
         //An example of Get
-        Debug.Log("Testing Get" + FullName);
+        Debug.Log("Testing Get" + " " + FullName);
 
     }
 }
