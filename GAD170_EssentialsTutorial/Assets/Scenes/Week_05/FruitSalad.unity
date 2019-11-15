@@ -149,6 +149,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8e6a877edc4a194da0c1ae1701e7643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chopFruitButton: 323
+  firstBanana: {fileID: 473927995}
+  firstApple: {fileID: 1816460947}
+  firstGrape: {fileID: 2042981606}
 --- !u!4 &423448287
 Transform:
   m_ObjectHideFlags: 0
@@ -268,6 +272,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad3483e5809d88438224fdb491fa748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numberOfSlices: 10
+  fruitColor: {r: 0.975944, g: 1, b: 0.06132078, a: 0}
+  hasSeeds: 0
 --- !u!1 &991029244
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +471,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e13fd2d5060ef4780e9cda3e91682f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numberOfSlices: 4
+  fruitColor: {r: 0.2428135, g: 0.9056604, b: 0.20932718, a: 0}
+  hasSeeds: 1
 --- !u!1 &1829815658
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +525,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 20.110434
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -541,7 +551,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829815658}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 509.6, y: 257.7, z: -25.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -561,7 +571,7 @@ GameObject:
   - component: {fileID: 2042981602}
   - component: {fileID: 2042981606}
   m_Layer: 0
-  m_Name: Grape
+  m_Name: PurpleGrape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -652,3 +662,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9e7ad1bde3a62041893d0f25f906572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numberOfSlices: 2
+  fruitColor: {r: 0.7075472, g: 0, b: 0.59104216, a: 0}
+  hasSeeds: 1

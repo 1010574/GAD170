@@ -4,15 +4,34 @@ using UnityEngine;
 
 public class Banana : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public int numberOfSlices; // the number of slices I will be cutting this fruit into.
+    public Color fruitColor; // the color of the fruit.
+    public bool hasSeeds = false; // if the fruit has seeds.
+
+    /// <summary>
+    /// This sets up the fruit for our fruit salad. 
+    /// </summary>
+    public void SetUpFruit()
     {
-        
+        if (GetComponent<MeshRenderer>())
+        {
+            GetComponent<MeshRenderer>().material.color = fruitColor;
+        }
+        else
+        {
+            Debug.Log("No mesh render component");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// Cuts the fruit up into the number of slices dictated by the script.
+    /// </summary>
+    public void ChopFruit()
     {
-        
+        string finalMessage = hasSeeds == true ? "but I had to be careful because it has seeds" : "I skinned it, and it had no seeds";
+
+        Debug.Log(string.Format("Cut the {0} into {1} slices, {2}", this.name , numberOfSlices, finalMessage));
     }
+
 }
