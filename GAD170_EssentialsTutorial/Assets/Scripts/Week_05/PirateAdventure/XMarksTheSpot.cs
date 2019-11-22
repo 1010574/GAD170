@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class XMarksTheSpot : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public TreasureChest treasureChest; // reference to treasure chest.
 
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// Sets new position for the XMarks Spot. .
+    /// </summary>
+   public void MoveToNewPosition()
     {
-        
+        transform.position = new Vector3(treasureChest.GoldFound(-30, 30), transform.position.y, treasureChest.GoldFound(-30, 30));
     }
 }
