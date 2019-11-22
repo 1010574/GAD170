@@ -323,6 +323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ab4f3e9bfdc6c4e84f88cf3c0fca5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myFirstIntArray: 050000000400000002000000
+  myFirstIntList: 0c000000130000005c000000
 --- !u!4 &1173467555
 Transform:
   m_ObjectHideFlags: 0

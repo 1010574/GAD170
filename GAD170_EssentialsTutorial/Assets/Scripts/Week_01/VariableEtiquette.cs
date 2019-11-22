@@ -9,7 +9,6 @@ public class VariableEtiquette : MonoBehaviour
 {
     // The access type, the data type, variableName, default value I want to assign.
     public int myFirstInt = 1; // An int stores Whole Numbers
-    private int m_mySecondInt = 4;
     public float myFirstFloat = 3.455f; // A Float stores decimal numbers, and requires the f symbol to denote it's a float when setting
     public double myFirstDouble = 0.11f; // Essentially a float but can go to 16 rather than 8 decimal places
     public bool myFirstBool = false; // A bool is used to store true or false statements
