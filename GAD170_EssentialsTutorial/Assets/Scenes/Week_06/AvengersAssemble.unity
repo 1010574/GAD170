@@ -163,6 +163,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e10d6ec04f5fa6747b643705b7c2ab1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heroName: Thor
+  weapon: Hammer
+  weaponDamage: 50
 --- !u!1 &281477497
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e10d6ec04f5fa6747b643705b7c2ab1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heroName: Nick Fury
+  weapon: Gun
+  weaponDamage: 5
 --- !u!1 &365307399
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,6 +255,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e10d6ec04f5fa6747b643705b7c2ab1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heroName: Korg
+  weapon: Humour
+  weaponDamage: 5
 --- !u!1 &683090012
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,6 +301,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e10d6ec04f5fa6747b643705b7c2ab1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heroName: Ironman
+  weapon: Blaster
+  weaponDamage: 20
 --- !u!1 &754214058
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5229af71492a8f49900f7eead069273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &933219725
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +482,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e10d6ec04f5fa6747b643705b7c2ab1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heroName: Black Widow
+  weapon: Gun
+  weaponDamage: 5
 --- !u!1 &1161513924
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,6 +528,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c3eae5829327c40b69c995e7331fc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allHeroes: []
+  heroesLeft: []
+  heroesRemoved: []
+  thanos: {fileID: 0}
 --- !u!1 &1859045260
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,6 +575,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e10d6ec04f5fa6747b643705b7c2ab1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heroName: Captain America
+  weapon: Sheild
+  weaponDamage: 5
 --- !u!1 &2020099641
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,6 +621,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e10d6ec04f5fa6747b643705b7c2ab1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heroName: Hawkeye
+  weapon: Bow
+  weaponDamage: 8
 --- !u!1 &2046715319
 GameObject:
   m_ObjectHideFlags: 0
