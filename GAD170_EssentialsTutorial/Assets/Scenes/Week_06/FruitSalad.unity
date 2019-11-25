@@ -152,6 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 618edf986ba16da43b5e833314680664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruitName: Watermelon
+  numberOfSlices: 15
+  fruitColor: {r: 0.8490566, g: 0.03586837, b: 0.01201493, a: 0}
+  hasSeeds: 1
 --- !u!65 &750749904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -219,7 +223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750749902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.000000059604645, y: 0, z: -0.00000011920929}
+  m_LocalPosition: {x: -1.87, y: 0, z: -0.00000011920929}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -254,6 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea57d86fd2cd1e545ae7aafcbf835b4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allFruit: []
 --- !u!4 &958062463
 Transform:
   m_ObjectHideFlags: 0
@@ -300,6 +305,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 618edf986ba16da43b5e833314680664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruitName: Banana
+  numberOfSlices: 10
+  fruitColor: {r: 0.8550933, g: 0.8867924, b: 0.17150229, a: 0}
+  hasSeeds: 0
 --- !u!136 &1323228436
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -368,7 +377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323228434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.000000059604645, y: 0, z: -0.00000011920929}
+  m_LocalPosition: {x: 1.99, y: 0, z: -0.00000011920929}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -489,6 +498,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 618edf986ba16da43b5e833314680664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruitName: Apple
+  numberOfSlices: 8
+  fruitColor: {r: 0.019357419, g: 0.8207547, b: 0.17505051, a: 0}
+  hasSeeds: 1
 --- !u!135 &1871398836
 SphereCollider:
   m_ObjectHideFlags: 0
