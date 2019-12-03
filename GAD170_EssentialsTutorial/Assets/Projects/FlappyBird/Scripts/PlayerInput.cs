@@ -12,6 +12,10 @@ public class PlayerInput : MonoBehaviour
     public float jumpingMass = 1; // the mass applied when jumping
     public float moveSpeed = 5; // The speed we move across the screen.
 
+    private GameManager gameManager; // reference to game manager
+    private Vector3 startingPosition; // reference to starting position.
+    private AudioManager audioManager; // reference to AudioManager.
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +29,10 @@ public class PlayerInput : MonoBehaviour
         {
             Debug.Log("No rigidbody on object");
         }
+
+        gameManager = FindObjectOfType<GameManager>();
+        startingPosition = transform.position;
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame
@@ -65,4 +73,23 @@ public class PlayerInput : MonoBehaviour
         // move towards moves at a constant rate towards a position.
        // transform.position = Vector3.MoveTowards(transform.position, transform.position + Vector3.right, Time.deltaTime);
     }
+
+    public void Reset()
+    {
+        // resets the players position to the starting point.
+        transform.position = startingPosition;
+    }
+
+    /// <summary>
+    /// Detects when the player collides with something. The player needs to have a rigidbody and a collider for this to work. 
+    /// </summary>
+    /// <param name="collision"></param>
+    private void OnCollisionEnter(Collision collision)
+    {
+        // call our reset function.
+        Debug.Log("We Dead fam");
+        gameManager.ResetGame();
+        audioManager.Dead();
+    }
+
 }
