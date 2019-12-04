@@ -13,7 +13,7 @@ public class Coin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        coinValue = Random.Range(1, 6);
+        coinValue = 1;
         gameManager = FindObjectOfType<GameManager>();
         myCollider = GetComponent<Collider>();
         myRenderer = GetComponentInChildren<MeshRenderer>(); // finds the first mesh renderer in the children

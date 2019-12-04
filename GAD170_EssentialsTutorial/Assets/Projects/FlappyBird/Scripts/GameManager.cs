@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public void ResetGame()
     {
         player.Reset();
+        ResetCameras();
         coinsCollected = 0;
         ResetCoins();
         spawningColumns.Reset();
@@ -43,6 +44,20 @@ public class GameManager : MonoBehaviour
         {
             coins[i].Reset();
         }
+    }
+
+    /// <summary>
+    /// Finds all camera scripts in scene and resets them.
+    /// </summary>
+    private void ResetCameras()
+    {
+        CameraScript[] cams = FindObjectsOfType<CameraScript>();
+
+        for(int i=0; i < cams.Length; i++)
+        {
+            cams[i].Reset();
+        }
+
     }
 
     /// <summary>

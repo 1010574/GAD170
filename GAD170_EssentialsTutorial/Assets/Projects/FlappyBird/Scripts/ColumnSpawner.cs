@@ -75,7 +75,7 @@ public class ColumnSpawner : MonoBehaviour
         float spawnYposition = Random.Range(columnYMin, columnYMax);
 
         // set the current column up to in list. Get it and change it's position.
-        columns[m_currentColumn].transform.position = new Vector3(15 + player.transform.position.x, spawnYposition, 0);
+        columns[m_currentColumn].transform.position = new Vector3(m_spawnXposition + player.transform.position.x, spawnYposition, 0);
 
         // then reset the position of the column.
         columns[m_currentColumn].GetComponent<Column>().SetPosition();

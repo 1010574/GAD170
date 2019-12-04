@@ -86,6 +86,10 @@ public class PlayerInput : MonoBehaviour
     /// <param name="collision"></param>
     private void OnCollisionEnter(Collision collision)
     {
+        if(collision.transform.tag == "Roof")
+        {
+            return;
+        }
         // call our reset function.
         Debug.Log("We Dead fam");
         gameManager.ResetGame();

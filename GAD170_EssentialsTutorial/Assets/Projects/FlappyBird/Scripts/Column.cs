@@ -19,14 +19,6 @@ public class Column : MonoBehaviour
     public float maxUpMovePosition = 2; // the random max position to move to
     public float maxDownMovePosition = -2; // the random min position to move to.
 
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-                   
-    }
-
     /// <summary>
     /// Sets up position of column
     /// </summary>
