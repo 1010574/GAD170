@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public int coinsCollected = 0;
     private PlayerInput player;
+    private ColumnSpawner spawningColumns;
 
 
     // Start is called before the first frame update
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour
     {
         // gets a reference to out player input.
         player = FindObjectOfType<PlayerInput>();
+        spawningColumns = FindObjectOfType<ColumnSpawner>();
     }
 
     /// <summary>
@@ -24,6 +26,7 @@ public class GameManager : MonoBehaviour
         player.Reset();
         coinsCollected = 0;
         ResetCoins();
+        spawningColumns.Reset();
 
         // Another way we could reset our game.
        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

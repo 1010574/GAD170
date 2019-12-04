@@ -16,7 +16,7 @@ public class Coin : MonoBehaviour
         coinValue = Random.Range(1, 6);
         gameManager = FindObjectOfType<GameManager>();
         myCollider = GetComponent<Collider>();
-        myRenderer = GetComponent<MeshRenderer>();
+        myRenderer = GetComponentInChildren<MeshRenderer>(); // finds the first mesh renderer in the children
         audioManager = FindObjectOfType<AudioManager>();
     }
 
