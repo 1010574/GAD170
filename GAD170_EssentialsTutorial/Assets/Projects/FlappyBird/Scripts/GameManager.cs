@@ -5,9 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public int coinsCollected = 0;
+    private int currentScore = 0;
+
+    public int CurrentScore
+    {
+        get
+        {
+            return currentScore;
+        }
+        set
+        {
+            currentScore = value;
+            uiManager.UpdateScore(currentScore);
+        }
+    }
     private PlayerInput player;
     private ColumnSpawner spawningColumns;
+    private UIManager uiManager;
 
 
     // Start is called before the first frame update
@@ -16,6 +30,8 @@ public class GameManager : MonoBehaviour
         // gets a reference to out player input.
         player = FindObjectOfType<PlayerInput>();
         spawningColumns = FindObjectOfType<ColumnSpawner>();
+        uiManager = FindObjectOfType<UIManager>();
+        
     }
 
     /// <summary>
@@ -25,7 +41,7 @@ public class GameManager : MonoBehaviour
     {
         player.Reset();
         ResetCameras();
-        coinsCollected = 0;
+        CurrentScore = 0;
         ResetCoins();
         spawningColumns.Reset();
 
@@ -66,7 +82,7 @@ public class GameManager : MonoBehaviour
     /// <param name="value"></param>
     public void CollectCoin(int value)
     {
-        coinsCollected += value;
+        CurrentScore += value;
     }
 
 
